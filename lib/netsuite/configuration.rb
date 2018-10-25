@@ -129,7 +129,7 @@ module NetSuite
     def wsdl_domain(wsdl_domain = nil)
       if wsdl_domain
         self.wsdl_domain = wsdl_domain
-      else  
+      else
         attributes[:wsdl_domain] ||= 'webservices.netsuite.com'
       end
     end
