@@ -130,7 +130,11 @@ module NetSuite
       if wsdl_domain
         self.wsdl_domain = wsdl_domain
       else
-        attributes[:wsdl_domain] ||= 'webservices.netsuite.com'
+        if sandbox
+          'webservices.netsuite.com'
+        else 
+          attributes[:wsdl_domain] ||= 'webservices.netsuite.com'
+        end
       end
     end
 
