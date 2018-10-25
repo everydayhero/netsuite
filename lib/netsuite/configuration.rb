@@ -123,13 +123,6 @@ module NetSuite
         self.wsdl = wsdl
       else
         attributes[:wsdl] ||= "https://#{wsdl_domain}/wsdl/v#{api_version}_0/netsuite.wsdl"
-        # attributes[:wsdl] ||= begin
-        #   if sandbox
-        #     "https://webservices.sandbox.netsuite.com/wsdl/v#{api_version}_0/netsuite.wsdl"
-        #   else
-        #     "https://#{wsdl_domain}/wsdl/v#{api_version}_0/netsuite.wsdl"
-        #   end
-        # end
       end
     end
 
