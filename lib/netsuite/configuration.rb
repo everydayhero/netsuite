@@ -128,6 +128,7 @@ module NetSuite
           else
             "https://#{wsdl_domain}/wsdl/v#{api_version}_0/netsuite.wsdl"
           end
+        end
       end
     end
 
