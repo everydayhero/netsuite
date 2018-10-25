@@ -122,8 +122,7 @@ module NetSuite
       if wsdl
         self.wsdl = wsdl
       else
-          "https://#{wsdl_domain}/wsdl/v#{api_version}_0/netsuite.wsdl"
-        end
+        attributes[:wsdl] ||= "https://#{wsdl_domain}/wsdl/v#{api_version}_0/netsuite.wsdl"
       end
     end
 
